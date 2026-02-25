@@ -41,4 +41,4 @@
 # s="王蕊大王万岁"
 # print(f'{s}'.center(20,"$"))
 # print(f'{s}'.count('王'))
-print(",".join(['6','7','8']))
+# print(",".join(['6','7','8']))

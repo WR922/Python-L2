@@ -17,12 +17,15 @@
 #     print("{:.0f}".format(add))
 # except ValueError:
 #     print("输入格式错误！")
-# try:
-#     add=(int(input("请输入一个整数：")))
-#     ad=add//100
-#     print(ad)
-# except ValueError:
-#     print("输入格式错误！")
+while True:
+    try:
+        add = int(input("请输入一个整数："))
+        ad=add//100
+        print(ad)
+        break
+    except:
+        print('格式输入错误，请重新输入！')
+
 # try:
 #     add=input("请输入一个字符串：")
 #     ad=add.split()

@@ -3,6 +3,7 @@
 # b=eval(a)*2
 # print(b)
 
+
 # a=eval(input("请输入数字："))*2
 # print(a)
 #倒叙输出
@@ -73,15 +74,72 @@
 # print(f'空格{c}个')
 # print(f'其他字符{d}个')
 #输入一个年份，判断是否为闰年，当用户输入的不是整数时，重新输入
-def ad(add):
-    return (add%4==0 and add%100 !=0 or add%400==0)
-while True:
+# def ad(add):
+#     return (add%4==0 and add%100 !=0 or add%400==0)
+# while True:
+#     try:
+#         add=int(input('请输入一个年份：'))
+#         if ad(add):
+#             print(f"{add}是闰年")
+#         else:
+#             print(f'{add}年不是闰年')
+#         break
+#     except ValueError:
+#         print('输入内容必须为年份！')
+# def add(n):
+#     s=1
+#     for i in range(1,n+1):
+#         s=s*i
+#     return s
+# print(add(23))
+# def add(x,y=10):
+#     print(x*y)
+# add(1,3)
+# def fanc(ls=[]):
+#     ls.append(1)
+#     return ls
+# a=fanc()
+# b=fanc()
+# print(a,b)
+# a='an apple a day'
+# def split(s):
+#     return s.split('a')
+# print(s.split())
+# english=0
+# digit=0
+# space=0
+# other=0
+# add=input('请输入一行字符：')
+# for i in add:
+#     if i.isalpha():
+#         english+=1
+#     elif i.isdigit():
+#         digit+=1
+#     elif i.isspace():
+#         space+=1
+#     else:
+#         other+=1
+# print(f'英文字符有{english}个')
+# print(f'数字有{digit}个')
+# print(f'空格有{space}个')
+# print(f'其他有{other}个')
+# def add(addd):
+#     return addd%4==0 and addd%100!=0 or addd%400==0
+# while True:
+#     try:
+#         addd=int(input('请输入一个年份：'))
+#         if add(addd):
+#             print(f'{addd}年是闰年')
+#         else:
+#             print(f'{addd}年不是闰年')
+#         break
+#     except:
+#         print("按要求请输入年份！")
+def isNum(s):
     try:
-        add=int(input('请输入一个年份：'))
-        if ad(add):
-            print(f"{add}是闰年")
-        else:
-            print(f'{add}年不是闰年')
-        break
-    except ValueError:
-        print('输入内容必须为年份！')
+        complex(s)
+        return True
+    except:
+        return False
+s=input('请输入:')
+print(isNum(s))

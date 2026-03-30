@@ -16,10 +16,10 @@
 #turtle.circle(80)
 #turtle.circle(160)
 #turtle.circle(-20)
-hob=""
-for i in range(3):
-    s=input("请输入你的小爱好（最多三个，按Q结束）：")
-    if s.upper()=='Q':
-        break
-    hob=hob+s+','
-print('你的小爱好是：',hob)
+# hob=""
+# for i in range(3):
+#     s=input("请输入你的小爱好（最多三个，按Q结束）：")
+#     if s.upper()=='Q':
+#         break
+#     hob=hob+s+','
+# print('你的小爱好是：',hob)
